@@ -1349,7 +1349,7 @@ a{
     }
 }
 
-@media screen and (min-width:356px) and (max-width:575px) {
+@media screen and (min-width:382px) and (max-width:575px) {
     
     .logo_superior{
         height:60%;
@@ -1529,7 +1529,7 @@ a{
 
 }
 
-@media screen and (min-width:0px) and (max-width:355px) {
+@media screen and (min-width:0px) and (max-width:381px) {
 
     .logo_superior{
         height:60%;
