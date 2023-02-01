@@ -1614,6 +1614,10 @@ a{
         align-items: center;
         margin: 0%;
     }
+
+    .texto_opciones_2{
+        color: #ffffff;
+    }
     
     .cuadrado_2{
         width:40%;
