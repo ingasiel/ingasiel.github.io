@@ -1495,15 +1495,11 @@ a{
         background: linear-gradient(45deg,#e100ff,#00c3ff);
         margin-top:95%;
         margin-left:32%;
-    
         cursor:pointer;
-    
         text-align: center;
-    
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
         visibility: hidden;
     }
 
@@ -1520,7 +1516,7 @@ a{
         cursor:pointer;
     
         text-align: center;
-    
+        visibility: hidden;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -1653,14 +1649,12 @@ a{
         background: linear-gradient(45deg,#e100ff,#00c3ff);
         margin-top:95%;
         margin-left:32%;
-    
         cursor:pointer;
-    
         text-align: center;
-    
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        visibility: hidden;
     }
 
     .boton_1_1{
