@@ -217,7 +217,7 @@ a{
 }
 
 .imagen_main2{
-    height:60%;
+    height:50%;
     margin-top: -5%;
 }
 
@@ -1509,14 +1509,12 @@ a{
         height:6%;
         border:none;
         background: linear-gradient(45deg,#e100ff,#00c3ff);
-    
         position: absolute;
         top:55%;
         left:8%;
         cursor:pointer;
-    
         text-align: center;
-        visibility: hidden;
+        visibility: visible;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
