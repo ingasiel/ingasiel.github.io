@@ -253,6 +253,7 @@ a{
     background: linear-gradient(120deg, #a802fa, #046ade);
     border-radius: 20px;
     min-width: 270px;
+    cursor: pointer;
 }
 
 .ancla_misproyectos{
@@ -417,6 +418,7 @@ a{
     height:80%;
     border-start-start-radius:20px;
     border-start-end-radius:20px;
+    box-shadow: 0px 0px 7px #171717;
 
 }
 
