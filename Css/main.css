@@ -7,6 +7,21 @@ body{
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #00007099;
+    border-radius:50px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #0f0f7b;
+}
+
 a{
     text-decoration: none;
     width: 100%;
@@ -254,6 +269,33 @@ a{
     border-radius: 20px;
     min-width: 270px;
     cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjetas_misproyectos2{
+    width:25%;
+    height:280px;
+    background: linear-gradient(120deg, #a802fa, #046ade);
+    border-radius: 20px;
+    min-width: 270px;
+    cursor: pointer;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjetas_misproyectos3{
+    width:25%;
+    height:280px;
+    background: linear-gradient(120deg, #a802fa, #046ade);
+    border-radius: 20px;
+    min-width: 270px;
+    cursor: pointer;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .ancla_misproyectos{
@@ -1735,6 +1777,29 @@ a{
         height:280px;
         background: linear-gradient(120deg, #a802fa, #046ade);
         border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjetas_misproyectos2{
+        width:25%;
+        height:280px;
+        background: linear-gradient(120deg, #a802fa, #046ade);
+        border-radius: 20px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjetas_misproyectos3{
+        width:25%;
+        height:280px;
+        background: linear-gradient(120deg, #a802fa, #046ade);
+        border-radius: 20px;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .imagen_estructura_2{
