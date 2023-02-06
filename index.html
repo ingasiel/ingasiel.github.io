@@ -13,23 +13,6 @@
     </head>
 
     <body>
-        <script>
-
-            function ventana(){
-                document.getElementById("vent1").style.display="block";
-                document.getElementById("vent2").style.display="block";
-
-
-            }
-
-            function cerrar(){
-                document.getElementById("vent1").style.display="none";
-                document.getElementById("vent2").style.display="none";
-
-            }
-
-
-        </script>
 
         <div class="rotar">
             <p class="texto_rotar">
@@ -131,52 +114,108 @@
         <div class="bloque_main_3">
             <p class="texto_titulo_main_3">Mis sistemas</p>
             <div class="ancla_misproyectos">
-                <div class="opciones_ancla_misproyectos_1">
+                <div class="opciones_ancla_misproyectos_1" onClick="javascript:web()" id="seleccion2">
                     <p class="texto_opciones">Web</p>
                 </div>
-                <div class="opciones_ancla_misproyectos">
+                <div class="opciones_ancla_misproyectos" onClick="javascript:pc()" id="seleccion3">
                     <p class="texto_opciones">Pc</p>
                 </div>
-                <div class="opciones_ancla_misproyectos_3">
+                <div class="opciones_ancla_misproyectos_3" onClick="javascript:celular()" id="seleccion1">
                     <p class="texto_opciones">Celular</p>
                 </div>
 
             </div>
 
 
-            <div class="tarjetas_misproyectos">
+
+            <!--Tarjetas de Web - Inicio-->
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta1">
                 <img src="Img/xandaingenieria.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos" onClick="javascript:vinculo1()">
+            <div class="tarjetas_misproyectos" onClick="javascript:vinculo1()" id="accion_de_tarjeta2">
                 <img src="Img/sitio3.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta3">
                 <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta4">
                 <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta5">
                 <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta6">
                 <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <!--Tarjetas de Web - Fin-->
 
+
+
+            <!--Tarjetas de Pc - Inicio-->
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer1">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
             </div>
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer2">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer3">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer4">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer5">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos2" id="efecto_aparecer6">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <!--Tarjetas de Pc - Final-->
+
+
+
+            <!--Tarjetas de Celular - Inicio-->
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer1">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer2">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer3">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer4">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer5">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <div class="tarjetas_misproyectos3" id="efecto2_aparecer6">
+                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
+                <p class="texto_opciones_2">Visualizar</p>
+            </div>
+            <!--Tarjetas de Celular - Final-->
 
         </div>
 
-        <script>
-            function vinculo1(){
-                location.href="https://xandacompany.github.io/";
-            }
-        </script>
+        <script src="Js/main.js"></script>
 
     </body>
 </html>
