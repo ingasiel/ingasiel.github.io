@@ -1,5 +1,6 @@
 function vinculo1(){
     location.href="https://xandacompany.github.io/";
+    
 }
 
 function celular(){
@@ -90,10 +91,8 @@ function pc(){
 }
 
 function cargar_pdf(){
-    document.getElementById("cargar_pdf_2").style.display="flex";
-    document.getElementById("ocultar_para_pdf").style.display="none";
-    document.getElementById("ocultar_para_pdf_2").style.display="none";
-    document.getElementById("ocultar_para_pdf_3").style.display="none";
+    window.open('../DA/ia_aplicada_en_la_salud_mental.pdf')
+
 
     return cargar_pdf();
 
