@@ -2423,7 +2423,7 @@ a{
 
 .pantalla_emergente_seccion2_superior_seccion_1{
     height: 100%;
-    width: 10%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2432,7 +2432,7 @@ a{
 
 .pantalla_emergente_seccion2_superior_seccion_2{
     height: 100%;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -2510,7 +2510,7 @@ a{
 
     .pantalla_emergente_seccion2_superior_seccion_1{
         height: 100%;
-        width: 20%;
+        width: 10%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -2519,7 +2519,7 @@ a{
     
     .pantalla_emergente_seccion2_superior_seccion_2{
         height: 100%;
-        width: 70%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
