@@ -25,7 +25,7 @@
 
     </head>
 
-    <body>
+    <body id="id_doby">
 
         <div class="bloque_main">
 
@@ -141,11 +141,11 @@
                 <img src="Img/sitio3.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
-            <div class="tarjetas_misproyectos" id="accion_de_tarjeta3">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta3" onClick="javascript:func_pantalla_emergente_2()">
                 <img src="Img/miniaturaapi.png" class="imagen_tarjeta_misproyectos">
                 <a href="DA/accionesentiemporeal.zip" download="Api acciones en tiempo real" class="texto_opciones_2"><p class="texto_opciones_2">Descargar</p></a>
             </div>
-            <div class="tarjetas_misproyectos" id="accion_de_tarjeta4">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta4" onClick="javascript:func_pantalla_emergente()">
                 <img src="Img/miniaturainventario.png" class="imagen_tarjeta_misproyectos">
                 <a href="DA/inventario.zip" download="Inventario Php" class="texto_opciones_2"><p class="texto_opciones_2">Descargar</p></a>
             </div>
@@ -222,6 +222,90 @@
             </div>
 
         </div>
+
+        <div class="contenedor_pantalla_emergente" id="cargar_pantalla_emergente">
+            <div class="pantalla_emergente">
+
+                <div class="pantalla_emergente_seccion1">
+                    <div class="pantalla_emergente_seccion1_superior">
+                        <p class="texto_titulo_pantalla_emergente">Contenido</p>
+                    </div>
+                    <div class="pantalla_emergente_seccion1_central">
+                        <img src="Img/inventario1.png" class="imagen_pantalla_emergente">
+                    </div>
+                    <div class="pantalla_emergente_seccion1_inferior">
+                        <p class="texto_puntos_pantalla_emergente">...</p>
+                    </div>
+                </div>
+
+                <div class="pantalla_emergente_seccion2">
+                    <div class="pantalla_emergente_seccion2_superior">
+                        <div class="pantalla_emergente_seccion2_superior_seccion_1"></div>
+                        <div class="pantalla_emergente_seccion2_superior_seccion_2"><p class="texto_titulo2_pantalla_emergente">Ficha técnica</p></div>
+                        <div class="pantalla_emergente_seccion2_superior_seccion_3">
+                            <img class="imagen_cerrar" onClick="javascript:cerrarventanaemergente()" src="Img/cerrar.png">
+                        </div>
+                    </div>
+                    <div class="pantalla_emergente_seccion2_centro">
+                        <p class="texto_descripcion_pantalla_emergente">Para poder utilizar este sistema sin ningún problema necesitarás:</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Sistema operativo: Indistinto</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Ancho de banda: +15 Mb</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Servidor: Local</p>
+                    </div>
+                    <div class="pantalla_emergente_seccion2_inferior">
+                        <a href="DA/inventario.zip" download="Inventario Php" class="boton_1"><div class="boton_1"><p class="texto_botones">Descargar</p></div></a>
+                        <div class="boton_1"><p class="texto_botones">Licencia</p></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <div class="contenedor_pantalla_emergente" id="cargar_pantalla_emergente_2">
+            <div class="pantalla_emergente">
+
+                <div class="pantalla_emergente_seccion1">
+                    <div class="pantalla_emergente_seccion1_superior">
+                        <p class="texto_titulo_pantalla_emergente">Contenido</p>
+                    </div>
+                    <div class="pantalla_emergente_seccion1_central">
+                        <img src="Img/api1.png" class="imagen_pantalla_emergente">
+                    </div>
+                    <div class="pantalla_emergente_seccion1_inferior">
+                        <p class="texto_puntos_pantalla_emergente">...</p>
+                    </div>
+                </div>
+
+                <div class="pantalla_emergente_seccion2">
+                    <div class="pantalla_emergente_seccion2_superior">
+                        <div class="pantalla_emergente_seccion2_superior_seccion_1"></div>
+                        <div class="pantalla_emergente_seccion2_superior_seccion_2"><p class="texto_titulo2_pantalla_emergente">Ficha técnica</p></div>
+                        <div class="pantalla_emergente_seccion2_superior_seccion_3">
+                            <img class="imagen_cerrar" onClick="javascript:cerrarventanaemergente()" src="Img/cerrar.png">
+                        </div>
+                    </div>
+                    <div class="pantalla_emergente_seccion2_centro">
+                        <p class="texto_descripcion_pantalla_emergente">Para poder utilizar este sistema sin ningún problema necesitarás:</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Sistema operativo: Indistinto</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Ancho de banda: +10 Mb</p>
+                        <p class="texto_descripcion_pantalla_emergente">° Servidor: Indistinto</p>
+                    </div>
+                    <div class="pantalla_emergente_seccion2_inferior">
+                        <a href="DA/inventario.zip" download="Inventario Php" class="boton_1"><div class="boton_1"><p class="texto_botones">Descargar</p></div></a>
+                        <div class="boton_1"><p class="texto_botones">Licencia</p></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+
 
         <script src="Js/main.js"></script>
 
