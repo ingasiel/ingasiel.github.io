@@ -92,8 +92,29 @@ function pc(){
 
 function cargar_pdf(){
     window.open('../DA/ia_aplicada_en_la_salud_mental.pdf')
-
+    document.getElementById("cargar_pdf_2").style.display="flex";
+    document.getElementById("ocultar_para_pdf").style.display="none";
+    document.getElementById("ocultar_para_pdf_2").style.display="none";
+    document.getElementById("ocultar_para_pdf_3").style.display="none";
 
     return cargar_pdf();
 
 }
+
+
+function func_pantalla_emergente(){
+    document.getElementById("cargar_pantalla_emergente").style.display="flex";
+    document.getElementById("id_doby").style.overflow="hidden";
+}
+
+function func_pantalla_emergente_2(){
+    document.getElementById("cargar_pantalla_emergente_2").style.display="flex";
+    document.getElementById("id_doby").style.overflow="hidden";
+}
+
+function cerrarventanaemergente(){
+    document.getElementById("cargar_pantalla_emergente").style.display="none";
+    document.getElementById("cargar_pantalla_emergente_2").style.display="none";
+    document.getElementById("id_doby").style.overflowY="scroll";
+}
+
