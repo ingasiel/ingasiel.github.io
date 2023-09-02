@@ -2561,6 +2561,17 @@ a{
         justify-content: start;
         align-content: center;
     }
+
+    .texto_bloque_licencia_titulo{
+        color: #ffffff;
+        font-size: 43px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 75px;
+        line-height: 45px;
+    }
     
 }
 
