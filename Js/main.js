@@ -90,6 +90,70 @@ function pc(){
     document.getElementById("efecto2_aparecer6").style.display="none";
 }
 
+function programacion(){
+    document.getElementById("seleccion2").style.background="linear-gradient(45deg,#046ade,#a802fa)";
+    document.getElementById("seleccion1").style.background="none";
+    document.getElementById("seleccion3").style.background="none";
+
+
+
+    document.getElementById("accion_de_tarjeta1_programacion").style.display="none";
+    document.getElementById("accion_de_tarjeta2_programacion").style.display="none";
+    document.getElementById("accion_de_tarjeta3_programacion").style.display="none";
+
+
+    document.getElementById("efecto_aparecer1_programacion").style.display="flex";
+    document.getElementById("efecto_aparecer2_programacion").style.display="flex";
+    document.getElementById("efecto_aparecer3_programacion").style.display="flex";
+
+    document.getElementById("accion_de_tarjeta1_programacion_3").style.display="none";
+    document.getElementById("accion_de_tarjeta2_programacion_3").style.display="none";
+    document.getElementById("accion_de_tarjeta3_programacion_3").style.display="none";
+}
+
+function mercadotecnia(){
+    document.getElementById("seleccion3").style.background="linear-gradient(45deg,#046ade,#a802fa)";
+    document.getElementById("seleccion2").style.background="none";
+    document.getElementById("seleccion1").style.background="none";
+
+
+
+    document.getElementById("accion_de_tarjeta1_programacion").style.display="flex";
+    document.getElementById("accion_de_tarjeta2_programacion").style.display="flex";
+    document.getElementById("accion_de_tarjeta3_programacion").style.display="flex";
+
+
+    document.getElementById("efecto_aparecer1_programacion").style.display="none";
+    document.getElementById("efecto_aparecer2_programacion").style.display="none";
+    document.getElementById("efecto_aparecer3_programacion").style.display="none";
+
+    document.getElementById("accion_de_tarjeta1_programacion_3").style.display="none";
+    document.getElementById("accion_de_tarjeta2_programacion_3").style.display="none";
+    document.getElementById("accion_de_tarjeta3_programacion_3").style.display="none";
+}
+
+function otros(){
+    document.getElementById("seleccion1").style.background="linear-gradient(45deg,#046ade,#a802fa)";
+    document.getElementById("seleccion2").style.background="none";
+    document.getElementById("seleccion3").style.background="none";
+
+
+
+    document.getElementById("accion_de_tarjeta1_programacion").style.display="none";
+    document.getElementById("accion_de_tarjeta2_programacion").style.display="none";
+    document.getElementById("accion_de_tarjeta3_programacion").style.display="none";
+
+
+    document.getElementById("efecto_aparecer1_programacion").style.display="none";
+    document.getElementById("efecto_aparecer2_programacion").style.display="none";
+    document.getElementById("efecto_aparecer3_programacion").style.display="none";
+
+
+    document.getElementById("accion_de_tarjeta1_programacion_3").style.display="flex";
+    document.getElementById("accion_de_tarjeta2_programacion_3").style.display="flex";
+    document.getElementById("accion_de_tarjeta3_programacion_3").style.display="flex";
+}
+
 function cargar_pdf(){
     window.open('../DA/ia_aplicada_en_la_salud_mental.pdf')
     document.getElementById("cargar_pdf_2").style.display="flex";
@@ -97,7 +161,15 @@ function cargar_pdf(){
     document.getElementById("ocultar_para_pdf_2").style.display="none";
     document.getElementById("ocultar_para_pdf_3").style.display="none";
 
-    return cargar_pdf();
+}
+
+function func_cargar_pdf_2(){
+    window.open('../DA/certificado_cloud_computing.pdf')
+    document.getElementById("cargar_pdf_3").style.display="flex";
+    document.getElementById("ocultar_para_pdf").style.display="none";
+    document.getElementById("ocultar_para_pdf_2").style.display="none";
+    document.getElementById("ocultar_para_pdf_3").style.display="none";
+
 
 }
 
