@@ -133,7 +133,7 @@
 
 
             <!--Tarjetas de Web - Inicio-->
-            <div class="tarjetas_misproyectos" id="accion_de_tarjeta1">
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta1" onClick="javascript:func_pantalla_emergente_no_disponible()">
                 <img src="Img/xandaingenieria.png" class="imagen_tarjeta_misproyectos">
                 <p class="texto_opciones_2">Visualizar</p>
             </div>
@@ -149,9 +149,9 @@
                 <img src="Img/miniaturainventario.png" class="imagen_tarjeta_misproyectos">
                 <a href="DA/inventario.zip" download="Inventario Php" class="texto_opciones_2"><p class="texto_opciones_2">Descargar</p></a>
             </div>
-            <div class="tarjetas_misproyectos" id="accion_de_tarjeta5">
-                <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
-                <p class="texto_opciones_2">Visualizar</p>
+            <div class="tarjetas_misproyectos" id="accion_de_tarjeta5" onClick="javascript:func_pantalla_emergente_no_disponible()">
+                <img src="Img/miniaturacorredordemexico.png" class="imagen_tarjeta_misproyectos">
+                <a href="DA/inventario.zip" download="Inventario Php" class="texto_opciones_2"><p class="texto_opciones_2">Descargar</p></a>
             </div>
             <div class="tarjetas_misproyectos" id="accion_de_tarjeta6">
                 <img src="Img/ciudad.png" class="imagen_tarjeta_misproyectos">
@@ -306,6 +306,32 @@
 
         
 
+
+        <div class="contenedor_pantalla_emergente" id="cargar_pantalla_emergente_no_disponible">
+            <div class="pantalla_emergente">
+
+                <div class="pantalla_emergente_superior_no_disponible">
+
+                    <div class="pantalla_emergente_superior_no_disponible_izquierda">
+
+                    </div>
+
+                    <div class="pantalla_emergente_superior_no_disponible_central">
+                        <p class="texto_titulo2_pantalla_emergente">Este contenido se encuentra en actualización</p>
+                    </div>
+
+                    <div class="pantalla_emergente_superior_no_disponible_derecha">
+                        <img class="imagen_cerrar" onClick="javascript:cerrarventanaemergente()" src="Img/cerrar.png">
+                    </div>
+
+                </div>
+
+                <div class="pantalla_emergente_inferior_no_disponible">
+                    <img src="Img/astronauta6.png" class="imagen_pantalla_emergente_no_disponible">
+                </div>
+
+            </div>
+        </div>
 
         <script src="Js/main.js"></script>
 
