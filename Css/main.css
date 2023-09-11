@@ -133,6 +133,17 @@ a{
     text-align: center;
 }
 
+.bloque_main_2_conocimientos{
+    background: linear-gradient(#151515, #001b3c);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:100%;
+    left:0%;
+    justify-content: center;
+    text-align: center;
+}
+
 .bloque_estructura{
     background: #161616;
     width:80%;
@@ -367,8 +378,17 @@ a{
     margin-bottom: 3%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;  
+}
+
+.ancla_misproyectos_conocimientos{
+    width:60%;
+    height:60px;
+    background: linear-gradient(45deg,#202020,#202020);
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
 }
 
 .opciones_ancla_misproyectos{
@@ -2698,4 +2718,111 @@ a{
 
 .imagen_pantalla_emergente_no_disponible{
     height: 100%;
+}
+
+.contenedor_certificaciones{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(180deg, #001b3c, #151515);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor_certificaciones_titulo{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.contenedor_certificaciones_menu{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor_certificaciones_certificados{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;
+}
+
+.tarjeta_certificados{
+    border-radius: 15px;
+    width: 23%;
+    height: 75%;
+    background: linear-gradient(45deg,#046ade,#a802fa); 
+    transition: 0.3s;
+    cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tarjeta_certificados_2{
+    border-radius: 15px;
+    width: 23%;
+    height: 75%;
+    background: linear-gradient(45deg,#046ade,#a802fa); 
+    transition: 0.3s;
+    cursor: pointer;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tarjeta_certificados:hover{
+    box-shadow: 0px 0px 8px #0077ff;
+}
+
+.imagen_certificado{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.tarjeta_certificados_campo_inferior{
+    width: 100%;
+    height: 15%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.barra_certificacion{
+    background: #202020;
+    width: 10%;
+    height: 2.5%;
+    position: relative;
+    top: 0%;
+}
+
+.contenedor_imagen_certificado{
+    width: 100%;
+    height: 85%;
+    box-shadow: 0px 0px 10px #000000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.defecto_activada_menu{
+    background: linear-gradient(45deg,#046ade,#a802fa); 
 }
