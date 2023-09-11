@@ -1531,7 +1531,7 @@ a{
 }
 
 /* Tablet | Inicio*/
-@media screen and (min-width:401px) and (max-width:575px) and (min-height:0px) and (max-height:768px) {
+@media screen and (min-width:456px) and (max-width:575px) and (min-height:0px) and (max-height:768px) {
     
     .logo_superior{
         height:60%;
