@@ -2463,7 +2463,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-content: center;    
 }
 
 .pantalla_emergente_seccion2_superior_seccion_3{
@@ -2642,4 +2642,60 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+}
+
+.pantalla_emergente_superior_no_disponible{
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(45deg,#046ade,#a802fa); 
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pantalla_emergente_superior_no_disponible_central{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pantalla_emergente_superior_no_disponible_izquierda{
+    height: 100%;
+    width: 15%;
+    border-top-left-radius:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pantalla_emergente_superior_no_disponible_derecha{
+    height: 100%;
+    width: 5%;
+    border-top-right-radius:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pantalla_emergente_inferior_no_disponible{
+    width: 100%;
+    height: 85%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen_pantalla_emergente_no_disponible{
+    height: 100%;
 }
