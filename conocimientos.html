@@ -42,7 +42,7 @@
                 </div>
     
                 <div class="bloque_3_opciones">
-                    <a href="index.html" class="vinculo_menu"><p class="texto_opciones">Inicio</p></a>
+                    <a href="index.html" class="vinculo_menu"><p class="texto_opciones">Sistemas</p></a>
     
                 </div>
     
@@ -72,7 +72,7 @@
 
 
 
-        <div class="bloque_main_2">
+        <div class="bloque_main_2_conocimientos">
             <div class="bloque_estructura">
                 <p class="texto_titulo_estructura_2">Aprendizaje</p>
                 <p class="texto_parrafo_estructura">Me he estado preparando en el mundo del desarrollo desde prácticamente toda mi vida, siendo los lenguajes Html, Php y Python los que mejor he dominado </p>
@@ -90,6 +90,121 @@
 
 
         <div class="bloque_main_4_conocimientos_contenedor">
+
+            <div class="contenedor_certificaciones">
+
+                <div class="contenedor_certificaciones_titulo">
+                    <p class="texto_titulo_main_3">Certificaciones</p>
+                </div>
+                <div class="contenedor_certificaciones_menu">
+                    
+                    <div class="ancla_misproyectos_conocimientos">
+                        <div class="opciones_ancla_misproyectos_1" onClick="javascript:programacion()" id="seleccion2">
+                            <p class="texto_opciones">Mercadotecnia</p>
+                        </div>
+                        <div class="opciones_ancla_misproyectos defecto_activada_menu" onClick="javascript:mercadotecnia()" id="seleccion3">
+                            <p class="texto_opciones">Ing. Sistemas</p>
+                        </div>
+                        <div class="opciones_ancla_misproyectos_3" onClick="javascript:otros()" id="seleccion1">
+                            <p class="texto_opciones">Otros</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="contenedor_certificaciones_certificados">
+
+                    <!--Tarjetas de programación - Inicio-->
+                    <div class="tarjeta_certificados" onClick="javascript:programacion()" id="accion_de_tarjeta1_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados" onClick="javascript:func_cargar_pdf_2()" id="accion_de_tarjeta2_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/certificadocloudcomputing.PNG" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados" id="accion_de_tarjeta3_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <!--Tarjetas de programación - Final-->
+
+
+
+
+                    
+                    <!--Tarjetas de mercadotecnia - Inicio-->
+                    <div class="tarjeta_certificados_2" id="efecto_aparecer1_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados_2" id="efecto_aparecer2_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados_2" id="efecto_aparecer3_programacion">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <!--Tarjetas de mercadotecnia - Final-->
+
+
+
+
+
+                    <!--Tarjetas de otros - Inicio-->
+                    <div class="tarjeta_certificados_2" id="accion_de_tarjeta1_programacion_3">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados_2" id="accion_de_tarjeta2_programacion_3">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta_certificados_2" id="accion_de_tarjeta3_programacion_3">
+                        <div class="contenedor_imagen_certificado">
+                            <img src="Img/ciudad.png" class="imagen_certificado">
+                        </div>
+                        <div class="tarjeta_certificados_campo_inferior">
+                            <p class="texto_opciones_2">Ver</p>
+                        </div>
+                    </div>
+                    <!--Tarjetas de otros - Final-->
+
+                </div>
+
+            </div>
 
             <div class="bloque_main_4_conocimientos">
 
@@ -162,6 +277,12 @@
             </div>
 
         </div>
+
+
+        <object id="cargar_pdf_3" class="pdf" type="application/pdf"></object>
+
+
+        <script src="Js/main.js"></script>
 
 
     </body>
