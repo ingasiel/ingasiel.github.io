@@ -1900,7 +1900,7 @@ a{
 
 
 /* Celular inteligente | Inicio*/
-@media screen and (min-width:0px) and (max-width:450px) and (min-height:0px) and (max-height:2768px){
+@media screen and (min-width:0px) and (max-width:455px) and (min-height:0px) and (max-height:2768px){
 
     .logo_superior{
         height:60%;
@@ -2282,6 +2282,31 @@ a{
         justify-content: center;  
     }
 
+    .tarjeta_certificados{
+        border-radius: 15px;
+        width: 23%;
+        height: 75%;
+        background: linear-gradient(45deg,#046ade,#a802fa); 
+        transition: 0.3s;
+        cursor: pointer;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .tarjeta_certificados_2{
+        border-radius: 15px;
+        width: 23%;
+        height: 75%;
+        background: linear-gradient(45deg,#046ade,#a802fa); 
+        transition: 0.3s;
+        cursor: pointer;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
 }
 /* Celular inteligente | Final*/
 
@@ -2520,7 +2545,7 @@ a{
 
 
 
-@media screen and (min-width:0px) and (max-width:450px) and (min-height:0px) and (max-height:2768px){
+@media screen and (min-width:0px) and (max-width:455px) and (min-height:0px) and (max-height:2768px){
 
     .pantalla_emergente{
         width: 80%;
