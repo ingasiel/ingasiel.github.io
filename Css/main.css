@@ -2272,6 +2272,16 @@ a{
         animation: astronauta_en_movimiento 15s infinite linear;
     }
 
+    .ancla_misproyectos_conocimientos{
+        width:80%;
+        height:60px;
+        background: linear-gradient(45deg,#202020,#202020);
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+
 }
 /* Celular inteligente | Final*/
 
