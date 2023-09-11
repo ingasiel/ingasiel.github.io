@@ -115,6 +115,11 @@ function func_pantalla_emergente_2(){
 function cerrarventanaemergente(){
     document.getElementById("cargar_pantalla_emergente").style.display="none";
     document.getElementById("cargar_pantalla_emergente_2").style.display="none";
+    document.getElementById("cargar_pantalla_emergente_no_disponible").style.display="none";
+
     document.getElementById("id_doby").style.overflowY="scroll";
 }
 
+function func_pantalla_emergente_no_disponible(){
+    document.getElementById("cargar_pantalla_emergente_no_disponible").style.display="flex";
+}
