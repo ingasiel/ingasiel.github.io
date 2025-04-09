@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /ads.txt
+Disallow: /docs/
+Sitemap: https://mundopymes.com/sitemap.xml

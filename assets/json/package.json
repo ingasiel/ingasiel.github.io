@@ -1,0 +1,213 @@
+{
+    "imagenes_muy_importantes": [
+        {
+            "src": "https://cumbre1000.com/wp-content/uploads/2024/11/help5.png",
+            "alt": "HELP AI | CUMBRE 1000",
+            "title": "HELP AI | CUMBRE 1000",
+            "class": "imagen_patrocinador2",
+            "loading": "lazy"
+        }
+    ],
+    "imagenes_importantes": [
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/city_banamex.png",
+        "alt": "City Banamex | CUMBRE 1000",
+        "title": "City Banamex | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/10/tnote.png",
+        "alt": "tnote | CUMBRE 1000",
+        "title": "tnote | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/09/unilever_bien.png",
+        "alt": "Unilever | CUMBRE 1000",
+        "title": "Unilever | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/09/walmart_bien.png",
+        "alt": "Walmart | CUMBRE 1000",
+        "title": "Walmart | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/visa.png",
+        "alt": "Visa | CUMBRE 1000",
+        "title": "Visa | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/ro.png",
+        "alt": "Phaira Soluciones | CUMBRE 1000",
+        "title": "Phaira Soluciones | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/h2.png",
+        "alt": "Huawei | CUMBRE 1000",
+        "title": "Huawei | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/ahua.png",
+        "alt": "JHUA | CUMBRE 1000",
+        "title": "JHUA | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/10/aries_2.png",
+        "alt": "Aries | CUMBRE 1000",
+        "title": "Aries | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/10/altour.png",
+        "alt": "Altour | CUMBRE 1000",
+        "title": "Altour | CUMBRE 1000",
+        "class": "imagen_patrocinador2",
+        "loading": "lazy"
+    }
+    ],
+    "imagenes_subimportantes": [
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/q2.png",
+        "alt": "Quálitas | CUMBRE 1000",
+        "title": "Quálitas | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/v2.png",
+        "alt": "Vinos Wagnes | CUMBRE 1000",
+        "title": "Vinos Wagnes | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+   {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/sss.png",
+        "alt": "Phaira Soluciones | CUMBRE 1000",
+        "title": "Phaira Soluciones | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/gm2.png",
+        "alt": "Grupo Miga Trading Company | CUMBRE 1000",
+        "title": "Grupo Miga Trading Company | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/phaira.png",
+        "alt": "Phaira Soluciones | CUMBRE 1000",
+        "title": "Phaira Soluciones | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/09/SMART-SPEAKERS.png",
+        "alt": "Smart Speakers | CUMBRE 1000",
+        "title": "Smart Speakers | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/09/MM.png",
+        "alt": "MM | CUMBRE 1000",
+        "title": "MM | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/10/voha.png",
+        "alt": "Voha | CUMBRE 1000",
+        "title": "Voha | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/mjtrade.png",
+        "alt": "MJTRADE | CUMBRE 1000",
+        "title": "MJTRADE | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/dbd.png",
+        "alt": "DBD | CUMBRE 1000",
+        "title": "DBD | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    }
+    ],
+    "imagenes_menos_importantes": [
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/10/eleconomista.png",
+        "alt": "El Economista | CUMBRE 1000",
+        "title": "El Economista | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/t2.png",
+        "alt": "The Core The Living Harmony | CUMBRE 1000",
+        "title": "The Core The Living Harmony | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/e2.png",
+        "alt": "energíahoy | CUMBRE 1000",
+        "title": "energíahoy | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/07/g2.png",
+        "alt": "Greentology The green side of business | CUMBRE 1000",
+        "title": "Greentology The green side of business | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+{
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/padock.png",
+        "alt": "Padock | CUMBRE 1000",
+        "title": "Padock | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/diariojudio.png",
+        "alt": "Diario Judio | CUMBRE 1000",
+        "title": "Diario Judio | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+    {
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/masideas.png",
+        "alt": "Más ideas | CUMBRE 1000",
+        "title": "Más ideas | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    },
+{
+        "src": "https://cumbre1000.com/wp-content/uploads/2024/11/formula.png",
+        "alt": "Radio Fórmula | CUMBRE 1000",
+        "title": "Radio Fórmula | CUMBRE 1000",
+        "class": "imagen_patrocinador",
+        "loading": "lazy"
+    }
+    ]
+}

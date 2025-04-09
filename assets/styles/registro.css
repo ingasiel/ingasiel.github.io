@@ -1,0 +1,36 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0px 0px;
+    margin: 0%;
+    grid-gap: 0px 15px;
+}
+.pantalla-transicion-pagina{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    background-color: #000000;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+.pantalla-transicion-pagina.hidden{
+    opacity: 0;
+}

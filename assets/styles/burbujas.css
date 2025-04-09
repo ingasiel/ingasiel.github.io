@@ -1,0 +1,14 @@
+.burbujas {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #d2d2d250;
+    animation: mover 5s linear infinite;
+}
+@keyframes mover {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}

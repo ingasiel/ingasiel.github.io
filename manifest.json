@@ -1,0 +1,22 @@
+{
+    "name": "Mundo Pymes",
+    "short_name": "Mundo Pymes",
+    "description": "Mundo Pymes, lleva tu empresa al radar de los líderes de la indistria para formar parte de las empresas que están transformando a México y al mundo.",
+    "start_url": "https://mundopymes.com/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "orientation": "portrait",
+    "icons": [
+        {
+        "src": "assets/images/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        },
+        {
+        "src": "assets/images/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}
