@@ -8,6 +8,7 @@ html, body{
     overflow-x: hidden;
     margin: 0%;
     padding: 0%;
+    scroll-behavior: smooth;
 }
 a, p, h1, h2, img{
     margin: 0%;
