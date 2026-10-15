@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+p, a, h1, h2, h3, h4, h5, h6, span, strong{
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root{
+    --color-negro: #000000;
+    --color-gris: #cccccc;
+    --color-blanco: #ffffff;
+
+    --fuente-haken: "Hanken Grotesk", sans-serif;
+
+    --size-h1-encabezado: clamp(27px, 9.5vw, 95px);
+    --size-parrafo-encabezado: clamp(20px, 4vw, 40px);
+    --size-parrafo-encabezado-generales: clamp(14px, 1.8vw, 18px);
+    --size-header: clamp(15px, 1.8vw, 18px);
+    --size-h2-generales: clamp(20px, 3.1vw, 31px);
+    --size-descripciones-generales: clamp(15px, 2vw, 20px);
+    --size-tarjetas-etiqueta-generales: clamp(15px, 2vw, 20px);
+    --size-tarjetas-descripcion-genereales: clamp(15px, 1.7vw, 17px);
+
+    --padding-seccion-encabezado: clamp(100px, 20vw, 200px) clamp(40px, 10vw, 100px);
+    --padding-seccion-generales: clamp(25px, 5vw, 50px);
+    --padding-header: clamp(15px, 2.5vw, 25px) clamp(25px, 5vw, 50px);
+    --padding-tarjetas-generales: clamp(20px, 3vw, 30px);
+}
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+    :root{
+        --size-h1-encabezado: clamp(27px, 17vw, 170px);
+        --size-parrafo-encabezado: clamp(20px, 6.5vw, 65px);
+        --size-parrafo-encabezado-generales: clamp(15px, 2.5vw, 25px);
+        --size-header: clamp(15px, 2.3vw, 25px);
+        --size-h2-generales: clamp(20px, 3.1vw, 45px);
+        --size-descripciones-generales: clamp(15px, 20vw, 30px);
+        --size-tarjetas-etiqueta-generales: clamp(15px, 3.5vw, 35px);
+        --size-tarjetas-descripcion-genereales: clamp(15px, 2.7vw, 27px);
+    }
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+}
+
+
+
+
+
+/* HEADER | INICIO */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - clamp(50px, 10vw, 100px));
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: start;
+    z-index: 5;
+    padding: var(--padding-header);
+}
+.header-activo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - clamp(50px, 10vw, 100px));
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: start;
+    z-index: 5;
+    padding: var(--padding-header);
+}
+.header-activo::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    z-index: -1;
+}
+.imagen-logo-header{
+    object-fit: contain;
+    width: clamp(125px, 10vw, 200px);
+}
+
+
+
+/* Contenedores | Inicio */
+.contenedor-opciones-menu-header{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(20px, 3.5vw, 35px);
+}
+/* Contenedores | Final */
+
+
+
+/* Textos | Inicio */
+.opciones-menu-header{
+    color: var(--color-blanco);
+    font-family: var(--fuente-haken);
+    font-size: var(--size-header);
+    font-weight: 200;
+    letter-spacing: -0.75px;
+}
+/* Textos | Final */
+
+
+
+/* Responsivo | Inicio */
+@media screen and (min-width: 0px) and (max-width: 700px){
+    .contenedor-opciones-menu-header{
+        display: none;
+    }
+}
+/* Responsivo | Final */
+
+/* HEADER | FINAL */
+
+
+
+
+
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--color-blanco);
+    overflow-x: hidden;
+}

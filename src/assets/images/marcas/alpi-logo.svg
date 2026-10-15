@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.35 42.25">
+    <g id="Logo_ALPI" data-name="Logo ALPI" transform="translate(-288.904 -90.733)" style="isolation: isolate">
+        <rect id="Rettangolo_2" data-name="Rettangolo 2" width="3.214" height="5.759"
+            transform="translate(363.04 90.733)" fill="#ffffff"></rect>
+        <rect id="Rettangolo_3" data-name="Rettangolo 3" width="3.214" height="34.336"
+            transform="translate(321.791 90.733)" fill="#ffffff"></rect>
+        <rect id="Rettangolo_4" data-name="Rettangolo 4" width="3.214" height="25.881"
+            transform="translate(363.04 98.851)" fill="#ffffff"></rect>
+        <path id="Tracciato_1" data-name="Tracciato 1"
+            d="M380.538,120.6a10.044,10.044,0,1,1,.7-3.695,10.03,10.03,0,0,1-.7,3.695m1.388-11.334a12.975,12.975,0,0,0-20.72-.6q0-2.438,0-4.874h-3.213v34.47h3.213q0-6.7,0-13.391a12.976,12.976,0,0,0,20.72-15.608"
+            transform="translate(-26.156 -5.283)" fill="#ffffff"></path>
+        <path id="Tracciato_2" data-name="Tracciato 2"
+            d="M311.348,120.385a9.892,9.892,0,0,1-2.235,3.359,10.124,10.124,0,0,1-14.195,0,9.9,9.9,0,0,1-2.235-3.359,9.79,9.79,0,0,1,0-7.294,9.91,9.91,0,0,1,2.235-3.359,10.124,10.124,0,0,1,14.2,0,9.9,9.9,0,0,1,2.235,3.359,9.792,9.792,0,0,1,0,7.295m.667-16.588q0,2.537,0,5.074a12.981,12.981,0,0,0-6.555-4.313,13.127,13.127,0,0,0-7.874.224,12.956,12.956,0,0,0-6.292,4.678,12.674,12.674,0,0,0,0,14.818,12.95,12.95,0,0,0,6.292,4.678,13.132,13.132,0,0,0,7.874.224,12.985,12.985,0,0,0,6.555-4.313q0,2.405,0,4.81h3.215V103.8Z"
+            transform="translate(0 -4.946)" fill="#ffffff"></path>
+    </g>
+</svg>

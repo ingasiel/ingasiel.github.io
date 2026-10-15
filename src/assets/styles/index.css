@@ -1,0 +1,1055 @@
+
+/* SECCIÓN ENCABEZADO | INICIO */
+.seccion-encabezado{
+    width: calc(100% - clamp(80px, 20vw, 200px));
+    padding: var(--padding-seccion-encabezado);
+    height: calc(100vh - clamp(200px, 40vw, 400px));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: clamp(25px, 5vw, 50px);
+    background-color: var(--color-negro);
+    position: relative;
+    overflow: hidden;
+    background-image: url('/src/assets/images/encabezado.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.seccion-encabezado::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+}
+
+
+
+/* Contenedores | Inicio */
+.contenedor-logo-encabezado{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+/* Contenedores | Final */
+
+
+
+/* Textos | Inicio */
+.h1-logo-encabezado{
+    color: var(--color-blanco);
+    font-weight: 600;
+    font-family: var(--fuente-haken);
+    font-size: var(--size-h1-encabezado);
+    animation: letrah1 1.75s linear;
+}
+@keyframes letrah1{
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.parrafo-descripcion-encabezado{
+    width: 100%;
+    text-align: center;
+    color: var(--color-gris);
+    font-weight: 300;
+    font-family: var(--fuente-haken);
+    font-size: var(--size-parrafo-encabezado-generales);
+    z-index: 3;
+    animation: descripcionparrafo 1.75s linear;
+}
+@keyframes descripcionparrafo {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.parrafo-nombre-logo-encabezado{
+    width: 100%;
+    text-align: center;
+    color: var(--color-blanco);
+    font-weight: 300;
+    font-family: var(--fuente-haken);
+    font-size: var(--size-parrafo-encabezado);
+    z-index: 3;
+    animation: nombreh1 2s linear;
+}
+@keyframes nombreh1{
+    0%{
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.parrafo-letra-encabezado{
+    position: absolute;
+    left: -7%;
+    top: -50%;
+    color: var(--color-blanco);
+    font-size: clamp(100vh, 150vw, 150vh);
+    font-family: var(--fuente-haken);
+    z-index: 2;
+    color: var(--color-gris);
+    opacity: 0.23;
+    animation: letrasuperpuesta 5s linear;
+}
+@keyframes letrasuperpuesta {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.23;
+    }
+}
+/* Textos | Final */
+
+
+
+/* Imágenes | Inicio */
+/* Imágenes | Final */
+
+
+
+/* Botones | Inicio */
+/* Botones | Final */
+
+
+
+/* Tarjetas | Inicio */
+.tarjeta-logo-encabezado{
+    border-radius: 100%;
+    border: 4px solid var(--color-blanco);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: var(--size-h1-encabezado);
+    height: var(--size-h1-encabezado);
+    padding: clamp(15px, 2vw, 20px);
+    animation: tarjetaencabezado 1.75s linear;
+}
+@keyframes tarjetaencabezado{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* Registra la variable como ángulo para poder animarla */
+@property --angulo {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.tarjeta-logo-encabezado {
+    position: relative;
+    border-radius: 100%;
+    border: 4px solid transparent; /* transparente: el borde lo pinta el ::before */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: var(--size-h1-encabezado);
+    height: var(--size-h1-encabezado);
+    padding: clamp(15px, 2vw, 20px);
+    animation: tarjetaencabezado 1.75s linear forwards;
+}
+
+/* El borde que se va rellenando */
+.tarjeta-logo-encabezado::before {
+    content: "";
+    position: absolute;
+    inset: -4px;              /* igual al grosor del border */
+    border-radius: 50%;
+    padding: 4px;             /* grosor del borde dibujado */
+    background: conic-gradient(var(--color-blanco) var(--angulo), transparent 0deg);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: rellenar-borde 2s linear forwards;
+}
+
+@keyframes tarjetaencabezado {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes rellenar-borde {
+    from { --angulo: 0deg; }
+    to   { --angulo: 360deg; }
+}
+/* Tarjetas | Final */
+
+
+
+/* Opciones | Inicio */
+/* Opciones | Final */
+
+
+
+/* Responsivo | Inicio */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .parrafo-descripcion-encabezado br{
+        display: none;
+    }
+    .seccion-encabezado{
+        background-attachment: scroll;
+    }
+    .parrafo-letra-encabezado{
+        display: none;
+    }
+}
+/* Responsivo | Final */
+/* SECCIÓN ENCABEZADO | FINAL */
+
+
+
+
+
+/* SECCIÓN GRIFERÍA | INICIO */
+.seccion-griferia{
+    width: calc(100% - var(--padding-seccion-generales) * 2);
+    padding: var(--padding-seccion-generales);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+background: linear-gradient(to right, #07090e, #0c1017, #111722);    background-size: 400% 400%;
+    animation: movimiento-degradado-griferia 12s ease infinite;
+}
+@keyframes movimiento-degradado-griferia{
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+/* Contenedores | Inicio */
+.contenedor-titulo-griferia{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: clamp(25px, 7vw, 70px);
+}
+.contenedor-tarjetas-griferia{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+/* Contenedores | Final */
+
+
+
+/* Textos | Inicio */
+.contenedor-titulo-griferia h2{
+    font-family: var(--fuente-haken);
+    color: var(--color-blanco);
+    font-size: var(--size-h2-generales);
+    font-weight: 600;
+}
+.contenedor-titulo-griferia p{
+    width: 50%;
+    text-align: end;
+    font-family: var(--fuente-haken);
+    color: var(--color-blanco);
+    font-size: var(--size-descripciones-generales);
+    line-height: var(--size-descripciones-generales);
+    font-weight: 400;
+}
+.tarjeta-griferia p{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    color: var(--color-blanco);
+    font-family: var(--fuente-haken);
+    font-size: var(--size-tarjetas-etiqueta-generales);
+    font-weight: 300;
+    z-index: 3;
+    text-transform: uppercase;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/* Textos | Final */
+
+
+
+/* Imágenes | Inicio */
+.tarjeta-griferia[data-alpi="alpi"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="alpi"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/alpi-tarjeta.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.tarjeta-griferia[data-alpi="bonqio"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="bonqio"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/bongio-tarjeta.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.tarjeta-griferia[data-alpi="ramonsoler"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="ramonsoler"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/ramonsoler-tarjeta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.tarjeta-griferia[data-alpi="axor"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="axor"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/axor-tarjeta.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.tarjeta-griferia[data-alpi="hansgrohe"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="hansgrohe"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/hansgrohe-tarjeta.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.tarjeta-griferia[data-alpi="grohe"]{
+    background-image: none;
+}
+.tarjeta-griferia[data-alpi="grohe"]::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/images/marcas/grohe-tarjeta.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    transform: scale(1);
+    transition: transform 0.7s ease;
+    pointer-events: none;
+}
+.imagen-logo-tarjeta-griferia {
+    height: clamp(40px, 6vw, 60px); /* Ajusta estos valores según prefieras */
+    width: auto;
+    object-fit: contain; /* Evita que la imagen se deforme */
+    position: relative;
+    z-index: 3;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.imagen-logo-ramonsoiler{
+    height: clamp(15px, 3vw, 30px);
+}
+.imagen-logo-axor{
+    height: clamp(100px, 15vw, 150px);
+}
+.imagen-logo-hansgrohe{
+    height: clamp(70px, 12vw, 120px);
+}
+.imagen-logo-grohe{
+    height: clamp(50px, 10vw, 100px);
+}
+/* Imágenes | Final */
+
+
+
+/* Botones | Inicio */
+/* Botones | Final */
+
+
+
+/* Tarjetas | Inicio */
+.tarjeta-griferia{
+    border-radius: clamp(10px, 1vw, 15px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: calc(100% - var(--padding-tarjetas-generales) * 2);
+    padding: var(--padding-tarjetas-generales);
+    background-color: var(--color-blanco);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    isolation: isolate;
+    cursor: pointer;
+}
+.tarjeta-griferia::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #00000090;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+/* Tarjetas | Final */
+
+
+
+/* Animaciones | Inicio */
+.tarjeta-griferia:hover::before{
+    opacity: 0;
+}
+.tarjeta-griferia:hover::after{
+    transform: scale(1.04);
+}
+.tarjeta-griferia:hover p,
+.tarjeta-griferia:hover .imagen-logo-tarjeta-griferia{
+    opacity: 0;
+    transform: scale(0.96);
+    pointer-events: none;
+}
+/* Animaciones | Final */
+
+
+
+/* Opciones | Inicio */
+/* Opciones | Final */
+
+
+
+/* Responsivo | Inicio */
+@media screen and (min-width: 0px) and (max-width: 700px){
+    .contenedor-titulo-griferia{
+        gap: 10px;
+    }
+    .contenedor-titulo-griferia h2{
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+    }
+    .contenedor-titulo-griferia p{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-tarjetas-griferia{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+/* Responsivo | Final */
+/* SECCIÓN GRIFERÍA | FINAL */
+
+
+
+
+
+/* SECCIÓN TOILETS | INICIO */
+.seccion-toilets{
+    width: calc(100% - var(--padding-seccion-generales) * 2);
+    padding: var(--padding-seccion-generales);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+    background-color: var(--color-blanco);
+}
+.seccion-toilets-marcas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: start;
+    background-color: var(--color-blanco);
+}
+
+
+
+/* Contenedores | Inicio */
+.contenedor-titulo-toilets{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contenedor-imagenes-toilets{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* Contenedores | Final */
+
+
+
+/* Textos | Inicio */
+.contenedor-titulo-toilets h2{
+    font-family: var(--fuente-haken);
+    color: var(--color-negro);
+    font-size: var(--size-h2-generales);
+    font-weight: 600;
+}
+.contenedor-titulo-toilets p{
+    width: 50%;
+    text-align: end;
+    font-family: var(--fuente-haken);
+    color: var(--color-negro);
+    font-size: var(--size-descripciones-generales);
+    line-height: var(--size-descripciones-generales);
+    font-weight: 400;
+}
+.tarjeta-imagen-toilets p{
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    width: 90%;
+    text-align: center;
+    color: var(--color-blanco);
+    font-weight: 400;
+    font-family: var(--fuente-haken);
+    font-size: var(--size-tarjetas-descripcion-genereales);
+    line-height: var(--size-tarjetas-descripcion-genereales);
+    z-index: 2;
+}
+/* Textos | Final */
+
+
+
+/* Imágenes | Inicio */
+.imagen-toilets{
+    width: 120px;
+    position: absolute;
+    left: calc(50% - 60px);
+    top: 15%;
+    z-index: 3;
+}
+/* Imágenes | Final */
+
+
+
+/* Botones | Inicio */
+/* Botones | Final */
+
+
+
+/* Tarjetas | Inicio */
+.tarjeta-imagen-toilets{
+    flex: 1;
+    aspect-ratio: 1/1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.tarjeta-imagen-toilets[data-toilets="toto"]{
+    background-image: url('/src/assets/images/marcas/toto-tarjeta.webp');
+}
+.tarjeta-imagen-toilets[data-toilets="toto"] > img{
+    filter: brightness(100);
+}
+.tarjeta-imagen-toilets[data-toilets="americanstandard"]{
+    background-image: url('/src/assets/images/marcas/american-standard-tarjeta.webp');
+}
+.tarjeta-imagen-toilets[data-toilets="americanstandard"] > img{
+    width: 210px;
+    left: calc(50% - 105px);
+}
+.tarjeta-imagen-toilets[data-toilets="villeroyyboch"]{
+    background-image: url('/src/assets/images/marcas/villeroy-y-boch-tarjeta.webp');
+}
+.tarjeta-imagen-toilets[data-toilets="villeroyyboch"] > img{
+    top: 10%;
+    width: 180px;
+    left: calc(50% - 90px);
+}
+.tarjeta-imagen-toilets::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #00000085 0%, transparent 100%);    z-index: 1;
+}
+/* Tarjetas | Final */
+
+
+
+/* Opciones | Inicio */
+/* Opciones | Final */
+
+
+
+/* Responsivo | Inicio */
+@media screen and (min-width: 2000px) and (max-width: 3000px){
+    .imagen-toilets{
+        width: 180px;
+        left: calc(50% - 90px);
+    }
+    .tarjeta-imagen-toilets[data-toilets="americanstandard"] > img{
+        width: 340px;
+        left: calc(50% - 170px);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px){
+    .contenedor-titulo-toilets{
+        gap: 10px;
+    }
+    .contenedor-titulo-toilets h2{
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+    }
+    .contenedor-titulo-toilets p{
+        width: 100%;
+        text-align: center;
+    }
+    .contenedor-imagenes-toilets{
+        gap: 10px;
+        overflow-y: auto;
+    }
+    .tarjeta-imagen-toilets{
+        width: 250px;
+        min-width: 250px;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1000px){
+    .contenedor-imagenes-toilets{
+        gap: 10px;
+        overflow-y: auto;
+    }
+    .tarjeta-imagen-toilets{
+        width: 300px;
+        min-width: 300px;
+    }
+}
+/* Responsivo | Final */
+/* SECCIÓN TOILETS | FINAL */
+
+
+
+
+
+/* SECCIÓN TINAS | INICIO */
+.seccion-tinas-y-lavabos{
+    width: calc(100% - var(--padding-seccion-generales) *2);
+    padding: var(--padding-seccion-generales);
+    height: clamp(200px, 30vw, 300px);
+    display: flex;
+    background-image: url('/src/assets/images/tinas.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    gap: clamp(15px, 2vw, 20px);
+}
+.seccion-tinas-y-lavabos::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000000, transparent);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    z-index: 1;
+}
+/* SECCIÓN TINAS | INICIO */
+
+
+
+
+
+/* Contenedores | Inicio */
+/* Contenedores | Final */
+
+
+
+/* Textos | Inicio */
+.h2-tinas-y-lavabos{
+    z-index: 2;
+    color: var(--color-blanco);
+    font-family: var(--fuente-haken);
+    font-size: var(--size-h2-generales);
+    font-weight: 600;
+    width: 100%;
+}
+.parrafo-tinas-y-lavabos{
+    z-index: 2;
+    color: var(--color-blanco);
+    font-family: var(--fuente-haken);
+    font-size: var(--size-tarjetas-descripcion-genereales);
+    font-weight: 300;
+    width: 100%;
+    text-align: start;
+}
+/* Textos | Final */
+
+
+
+/* Imágenes | Inicio */
+.imagen-tinas{
+    width: clamp(150px, 20vw, 200px);
+    z-index: 2;
+    margin-top: clamp(15px, 2vw, 20px);
+}
+/* Imágenes | Final */
+
+
+
+/* Botones | Inicio */
+/* Botones | Final */
+
+
+
+/* Tarjetas | Inicio */
+/* Tarjetas | Final */
+
+
+
+/* Opciones | Inicio */
+/* Opciones | Final */
+
+
+
+/* Responsivo | Inicio */
+@media screen and (min-width: 2000px) and (max-width: 3000px) {
+    .imagen-tinas{
+        width: clamp(150px, 30vw, 300px);
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .seccion-tinas-y-lavabos{
+        background-position: right;
+        justify-content: center;
+        background-attachment: scroll;
+    }
+    .seccion-tinas-y-lavabos::before{
+        background: #00000085;
+    }
+    .parrafo-tinas-y-lavabos br{
+        display: none;
+    }
+    .h2-tinas-y-lavabos{
+        text-align: center !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+    .h2-tinas-y-lavabos svg{
+        text-align: center !important;
+        justify-content: center !important;
+        justify-items: center !important;
+    }
+    .titulo-trazado-svg{
+        display: flex !important;
+    }
+    .parrafo-tinas-y-lavabos{
+        text-align: center;
+        line-height: var(--size-tarjetas-descripcion-genereales);
+    }
+}
+/* Responsivo | Final */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Agua simulada | Inicio */
+.canvas-agua-encabezado{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;               /* la controla el JS frame a frame */
+    pointer-events: none;
+    z-index: 0;
+}
+/* Refuerzo: el contenido siempre sobre el agua */
+.tarjeta-logo-encabezado{ z-index: 3; }
+/* Agua simulada | Final */
+
+
+
+
+
+/* Goteo simulado | Inicio */
+/* Lienzo global del goteo (lo crea el JS en el body).
+   Es nuevo e independiente del canvas del efecto de ondas. */
+.canvas-goteo-encabezado{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity 1.6s ease;
+}
+.canvas-goteo-encabezado.canvas-goteo-activa{
+    opacity: 1;
+}
+
+/* Vidrio mojado dentro de cada tarjeta de grifería */
+.canvas-vidrio-tarjeta{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.5s ease;   /* NUEVO: mismo timing que el tinte y el logo */
+}
+/* Goteo simulado | Final */
+/* Animaciones | Inicio */
+.tarjeta-griferia:hover::before{
+    opacity: 0;
+}
+.tarjeta-griferia:hover::after{
+    transform: scale(1.04);
+}
+.tarjeta-griferia:hover p,
+.tarjeta-griferia:hover .imagen-logo-tarjeta-griferia{
+    opacity: 0;
+    transform: scale(0.96);
+    pointer-events: none;
+}
+.tarjeta-griferia:hover .canvas-vidrio-tarjeta{   /* NUEVO */
+    opacity: 0;                                    /* NUEVO: oculta vaho y gotas en hover */
+}                                                  /* NUEVO */
+/* Animaciones | Final */
+
+
+
+
+
+
+/* Mar en el encabezado | Inicio */
+/* Lienzo del mar (lo crea el JS dentro de la sección).
+   Nuevo e independiente del canvas del efecto de ondas. */
+.canvas-mar-encabezado{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: clamp(90px, 16vh, 170px);
+    z-index: 2;              /* misma capa que la letra gigante (la tapa por orden DOM), bajo los textos (z 3) */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.8s ease;
+}
+.canvas-mar-encabezado.canvas-mar-activa{
+    opacity: 1;
+}
+/* Mar en el encabezado | Final */
+/* ===== Títulos con trazo animado ===== */
+.titulo-trazado-svg {
+    --dur-trazo: 900ms;      /* duración del trazado de cada letra */
+    --dur-relleno: 350ms;    /* duración del relleno final */
+    --delay-letra: 70ms;     /* separación entre letras */
+    --delay: calc(var(--i, 0) * var(--delay-letra));
+
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.titulo-trazado-svg text {
+    font-family: var(--fuente-haken);
+    font-size: var(--size-h2-generales);
+    font-weight: 600;
+    fill: currentColor;       /* hereda el blanco/negro de tu h2 */
+    fill-opacity: 0;
+    stroke: currentColor;
+    stroke-width: 1.1;        /* grosor del trazo, ajústalo a gusto */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.titulo-trazado-svg tspan.letra {
+    stroke-dasharray: var(--len, 300);
+    stroke-dashoffset: var(--len, 300);
+}
+
+.titulo-trazado-svg.animar tspan.letra {
+    animation:
+        trazar-linea var(--dur-trazo) ease-in-out forwards,
+        rellenar-letra var(--dur-relleno) ease-out forwards,
+        quitar-trazo var(--dur-relleno) ease-out forwards;
+    animation-delay:
+        var(--delay),
+        calc(var(--delay) + var(--dur-trazo)),
+        calc(var(--delay) + var(--dur-trazo));
+}
+
+@keyframes trazar-linea  { to { stroke-dashoffset: 0; } }
+@keyframes rellenar-letra { to { fill-opacity: 1; } }
+@keyframes quitar-trazo   { to { stroke-opacity: 0; } }
+
+/* Accesibilidad: sin animación si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+    .titulo-trazado-svg text { fill-opacity: 1; stroke: none; }
+    .titulo-trazado-svg.animar tspan.letra { animation: none; stroke: none; }
+}
+
+/* Animación de textos | Inicio */
+.contenedor-titulo-toilets p,
+.contenedor-titulo-griferia p{
+    opacity: 0;
+    transform: translateX(70px);
+    transition: opacity 1.5s ease, transform 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+.contenedor-titulo-toilets p.texto-visible,
+.contenedor-titulo-griferia p.texto-visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Animación de textos | Fin */
+
+
+
+
+
+/* Ondas de tinas y lavabos | Inicio */
+/* Lienzo global del efecto (lo crea el JS en el body).
+   Fixed: la superficie de agua cruza todo el viewport y las
+   ondas viajan hasta los extremos de la pantalla. */
+.canvas-ondas-tinas{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9997;         /* justo bajo el goteo del encabezado (9998) */
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+.canvas-ondas-tinas.canvas-ondas-tinas-activa{
+    opacity: 1;
+}
+/* Ondas de tinas y lavabos | Final */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .seccion-tinas-y-lavabos{
+        background-position: right;
+        justify-content: center;
+        background-attachment: scroll;
+    }
+    .seccion-tinas-y-lavabos::before{
+        background: #00000085;
+    }
+    .parrafo-tinas-y-lavabos br{
+        display: none;
+    }
+    /* El h2 se vuelve flex para poder centrar la caja del SVG */
+    .h2-tinas-y-lavabos{
+        display: flex;
+        justify-content: center;
+    }
+    .h2-tinas-y-lavabos .titulo-trazado-svg{
+        margin-inline: auto;
+    }
+    .parrafo-tinas-y-lavabos{
+        text-align: center;
+        line-height: var(--size-tarjetas-descripcion-genereales);
+    }
+}
